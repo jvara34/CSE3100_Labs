@@ -1,0 +1,67 @@
+$date
+	Sat Oct  5 15:18:29 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module CircuitD_tb $end
+$var wire 1 ! minimizedForm_F $end
+$var wire 1 " POSForm_F $end
+$var reg 1 # A $end
+$var reg 1 $ B $end
+$var reg 1 % C $end
+$scope module uut $end
+$var wire 1 # X1 $end
+$var wire 1 $ X2 $end
+$var wire 1 % X3 $end
+$var wire 1 " F $end
+$upscope $end
+$scope module uut2 $end
+$var wire 1 ! F $end
+$var wire 1 # X1 $end
+$var wire 1 $ X2 $end
+$var wire 1 % X3 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0%
+0$
+0#
+0"
+0!
+$end
+#20
+1"
+1!
+1%
+#40
+0"
+0!
+0%
+1$
+#60
+1%
+#80
+1"
+1!
+0%
+0$
+1#
+#100
+1%
+#120
+0%
+1$
+#140
+0"
+0!
+1%
+#160

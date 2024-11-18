@@ -1,0 +1,34 @@
+#! /opt/homebrew/Cellar/icarus-verilog/12.0/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/system.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/va_math.vpi";
+S_0x138607520 .scope module, "introduction" "introduction" 2 1;
+ .timescale 0 0;
+v0x138607690_0 .var "firstname", 48 1;
+v0x138617650_0 .var "lastname", 32 1;
+v0x1386176f0_0 .var/i "years", 31 0;
+    .scope S_0x138607520;
+T_0 ;
+    %pushi/vec4 1249209449, 0, 32; draw_string_vec4
+    %pushi/vec4 24942, 0, 16; draw_string_vec4
+    %concat/vec4; draw_string_vec4
+    %store/vec4 v0x138607690_0, 0, 48;
+    %pushi/vec4 1449226849, 0, 32; draw_string_vec4
+    %store/vec4 v0x138617650_0, 0, 32;
+    %pushi/vec4 1, 0, 32;
+    %store/vec4 v0x1386176f0_0, 0, 32;
+    %vpi_call 2 11 "$display", "\012\011 Hello, my name is %s %s and I have been attending CSUSB for %0d years.", v0x138607690_0, v0x138617650_0, v0x1386176f0_0 {0 0 0};
+    %vpi_call 2 12 "$display", "\011 I am a student in CSE3100. \012" {0 0 0};
+    %vpi_call 2 13 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "introduction.v";
