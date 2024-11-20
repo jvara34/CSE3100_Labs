@@ -16,7 +16,7 @@ module NORusingNAND (A, B, Q); // This module is representing the NOR gate using
     /* Below is created from the logic gates from the power point to demonstrate that you can
        use NAND gates to create the NOR gate because its a universal gate 
     */
-    NANDgate u1(A, A, C); 
+    NANDgate u1(A, A, C); // u1 is an instance of this wires 
     NANDgate u2(B, B, D); 
     NANDgate u3(C, D, E); 
     NANDgate u4(E, E, F); 

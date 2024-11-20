@@ -17,13 +17,15 @@ module NANDusingNor (A, B, Q);
     output Q; 
 
     wire C, D, E, F; 
-
+    /* Below is created from the logic gates from the power point to demonstrate that you can
+       use NOR gates to create the NAND gate because its a universal gate 
+    */
     NORgate u1(A, A, C); // u1 is an instance 
     NORgate u2(B, B, D); 
     NORgate u3(D, C, E); 
     NORgate u4(E, E, F); 
     
-    assign Q = F; 
+    assign Q = F; // assigns the last value to Q 
 
 endmodule
 
@@ -31,7 +33,7 @@ endmodule
 
 // Do not need to implement 
 // Create all 7 gates using NOR gates 
-
+/***********************************/ 
 module ORusingNOR (A, B, Q); 
 
     input A, B; 
