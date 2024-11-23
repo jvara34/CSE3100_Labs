@@ -13,7 +13,7 @@ module fullAdder(A, B, carryIn, sum, carryOut); // module for full adder
     input A, B, carryIn; 
     output sum, carryOut; 
     // intermediary wires 
-    wire c, d, e; 
+    wire c, d, e, f; 
 
     halfAdder u1(A, B, c, d); 
     halfAdder u2(carryIn, c, e, f); 
