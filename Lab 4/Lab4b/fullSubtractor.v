@@ -18,7 +18,9 @@ module fullSubtractor(A, B, borrowIn, diff, borrowOut);
     halfSubtractor u1(A, B, c, d);
     halfSubtractor u2(borrowIn, c, e, f); 
 
-    assign borrowOut = f | d; 
+    assign borrowOut = f | d; // This does not work?? 
+    // I followed the full subtractor gates and its similar to the full adder still
+    // does not work? What am I missing? 
     assign diff = e; 
  
 endmodule 
