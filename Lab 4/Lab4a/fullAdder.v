@@ -18,8 +18,8 @@ module fullAdder(A, B, carryIn, sum, carryOut); // module for full adder
     halfAdder u1(A, B, c, d); 
     halfAdder u2(carryIn, c, e, f); 
 
-    assign carryOut = f | d; 
-    assign sum = e; 
+    assign carryOut = f | d; // This is the last gate to get the final output for carryout 
+    assign sum = e; // equals to the e wire when finished 
 
 endmodule
 
